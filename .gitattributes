@@ -1,0 +1,7 @@
+# Normalize text files to LF in the repository and working tree.
+* text=auto eol=lf
+
+# GitHub Actions workflow files must stay LF-only on Windows.
+.gitattributes text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf

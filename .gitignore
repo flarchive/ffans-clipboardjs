@@ -1,0 +1,7 @@
+node_modules
+vendor
+/.idea/
+/.flarum-v100-test/
+/tests/integration/tmp/
+/tests/.phpunit.result.cache
+composer.lock

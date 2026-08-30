@@ -1,0 +1,65 @@
+{
+  "name": "ffans/clipboardjs",
+  "description": "Add a modern approach to copy code to clipboard with code language display.",
+  "keywords": [
+    "flarum",
+    "clipboardjs",
+    "code language"
+  ],
+  "type": "flarum-extension",
+  "license": "MIT",
+  "require": {
+    "php": ">=7.3 || ^8.0",
+    "flarum/core": "^1.8.0"
+  },
+  "require-dev": {
+    "flarum/testing": "^1.8.1"
+  },
+  "authors": [
+    {
+      "name": "Golden",
+      "email": "littlegoldenjin@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/ffans/clipboardjs/issues",
+    "source": "https://github.com/ffans/clipboardjs",
+    "forum": "https://discuss.flarum.org/d/26415"
+  },
+  "homepage": "https://github.com/ffans",
+  "autoload": {
+    "psr-4": {
+      "FFans\\ClipboardJS\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "FFans\\ClipboardJS\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "@test:integration",
+    "test:integration": "phpunit -c tests/phpunit.integration.xml",
+    "test:setup": "@php tests/integration/setup.php"
+  },
+  "scripts-descriptions": {
+    "test": "Runs all tests.",
+    "test:integration": "Runs the integration tests.",
+    "test:setup": "Sets up the integration test database. Execute this only once."
+  },
+  "extra": {
+    "flarum-extension": {
+      "title": "FFans Clipboardjs",
+      "category": "feature",
+      "icon": {
+        "name": "far fa-clipboard",
+        "backgroundColor": "#f8504b",
+        "color": "#ffffff"
+      }
+    },
+    "flagrow": {
+      "discuss": "https://discuss.flarum.org/d/26408"
+    }
+  }
+}
